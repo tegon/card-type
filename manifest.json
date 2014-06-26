@@ -10,5 +10,6 @@
        "js": ["build/index.js"],
        "css": ["build/index.css"]
      }
-  ]
+  ],
+  "web_accessible_resources": ["build/index.css"]
 }
