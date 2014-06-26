@@ -2,7 +2,6 @@ class window.Parser
   constructor: ->
     @cards = $('.list-card-details a')
     @cards.each (index, element) =>
-      console.log 'foooo====>', index, element
       @parseCard index, $(element)
 
   parseCard: (index, element) ->
