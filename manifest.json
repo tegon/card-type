@@ -8,7 +8,7 @@
      {
        "matches": ["https://trello.com/*"],
        "js": ["build/index.js"],
-       "css": ["css/index.css"]
+       "css": ["build/index.css"]
      }
   ]
 }

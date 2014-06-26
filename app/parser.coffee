@@ -24,8 +24,8 @@ class window.Parser
 
   createBadgeHtml: (card) ->
     div = $('<div>', { title: card.badgeTitle, class: 'badge badge-card-type' })
-    span = $('<span>', { class: card.cssClass, text: card.type })
+    span = $('<span>', { class: "badge-text #{ card.cssClass }", text: card.type })
     div.html span
 
   appendBadge: (element, card) ->
-    element.parent().find('.badges').append(@createBadgeHtml(card.type));
+    element.parent().find('.badges').append(@createBadgeHtml(card));

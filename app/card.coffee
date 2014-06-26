@@ -14,10 +14,10 @@ class window.Card
     number: /^#\d+/
 
   setTitle: ->
-    @title = @title.replace(Card.patterns()[@type], '').replace(Card.patterns().number, '')
+    @title = @title.replace(Card.patterns()[@type], '').replace(Card.patterns().number, '').trim()
 
   setCssClass: ->
-    @cssClass = ".card-#{ @type }"
+    @cssClass = "card-#{ @type }"
 
   setBadgeTitle: ->
     @badgeTitle = "This card is a #{ @type } card."
