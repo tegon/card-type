@@ -1,19 +1,16 @@
 class window.Parser
   constructor: ->
-    console.log 'parser'
     @cards = $('.list-card-details a')
     @cards.each (index, element) =>
       console.log 'foooo====>', index, element
       @parseCard index, $(element)
 
   parseCard: (index, element) ->
-    console.log 'parseCard'
     type = @cardType element
     return unless type
     card = new Card
       type: type
       title: element.text()
-    console.log 'card===>', card
     @changeCardTitle element, card
     @appendBadge element, card
 
