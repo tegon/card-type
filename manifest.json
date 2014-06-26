@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "CadType",
+  "description": "Card Type for Trello",
+  "version": "1.0",
+  "content_scripts": [
+     {
+       "matches": ["https://trello.com/*"],
+       "js": ["build/index.js"]
+     }
+  ]
+}
